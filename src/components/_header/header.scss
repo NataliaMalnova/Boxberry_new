@@ -1,0 +1,15 @@
+@import "search";
+.header-logo {
+  width: 123px;
+  @include media-breakpoint-up(md) {
+    width: 147px;
+  }
+}
+
+.header-top,
+.header-bottom{
+  @include media-breakpoint-only(xs) {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

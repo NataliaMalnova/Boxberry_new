@@ -1,0 +1,40 @@
+$font-primary: 'Open Sans', sans-serif;
+
+$font-weight: 400;
+$font-weight-bold: bold;
+
+$font-style: normal;
+
+$spacers: (
+        0: 0,
+        1: 6px,
+        2: 12px,
+        3: 18px,
+        4: 24px,
+        5: 30px,
+        6: 60px
+);
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 768px,
+        md: 991px,
+        lg: 1280px
+);
+
+$container-max-widths: (
+        sm: 864px,
+        md: 990px,
+        lg: 1214px
+);
+
+$grid-column: (3, 4, 6);
+
+$grid-gutter-width: 20px;
+
+$gutters: (
+  0: calc($grid-gutter-width / 2),
+  1: calc($grid-gutter-width / 2) * 0.6,
+);
+
+

@@ -1,0 +1,28 @@
+.card-catalog {
+  border-radius: 10px;
+  border: 1px solid var(--color-light-secondary);
+  min-height: 95px;
+
+  @include media-breakpoint-up(sm) {
+    min-height: 144px;
+  }
+
+  span {
+    text-decoration: underline;
+  }
+
+  &:hover {
+    span {
+      text-decoration: none;
+    }
+  }
+
+  .card-catalog__images {
+    max-height: 15px;
+    max-width: calc(100% - 40px);
+
+    @include media-breakpoint-up(sm) {
+      max-height: 40px;
+    }
+  }
+}

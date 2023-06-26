@@ -1,0 +1,65 @@
+
+@mixin font-h1() {
+  font-size: 18px;
+  line-height: 130%;
+  @include media-breakpoint-up(sm) {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
+
+@mixin font-h2() {
+  font-size: 24px;
+  line-height: 31px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
+
+@mixin font-h3() {
+  font-size: 20px;
+  line-height: 150%;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 32px;
+    line-height: 41px;
+  }
+}
+
+@mixin font-large() {
+  font-size: 16px;
+  line-height: 150%;
+  @include media-breakpoint-up(sm) {
+    font-size: 18px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 22px;
+  }
+}
+
+@mixin font-text() {
+  font-size: 13px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 14px;
+  }
+}
+@mixin font-primary() {
+  font-size: 14px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 16px;
+  }
+}
+
+@mixin font-basic() {
+  font-size: 13px;
+  line-height: 150%;
+}
+
+@mixin font-small() {
+  font-size: 12px;
+  line-height: 15px;
+}

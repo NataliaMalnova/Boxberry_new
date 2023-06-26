@@ -1,0 +1,102 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: $font-weight;
+	font-style: $font-style;
+    color: var(--color-primary-text);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color:#fff;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+h6, h5, h4, h3, h2, h1 {
+    font-family: $font-primary;
+    font-weight: $font-weight;
+}
+
+p, a, label, input, span, li, ol, ul {
+    font-family: $font-primary;
+    font-weight: $font-weight;
+}
+
+h1 {
+    @include font-h1();
+}
+
+label, p, li, input, a {
+    @include font-basic();
+}
+
+.text-small {
+    @include font-small();
+}
+
+.text-primary {
+    @include font-primary();
+}
+
+.text {
+    @include font-text();
+}
+
+.text-large {
+    @include font-large();
+}
+
+.font-weight {
+    font-weight: $font-weight !important;
+}
+
+.font-bold {
+    font-weight: $font-weight-bold !important;
+}
+
+.color-primary {
+    color: var(--color-primary-text) !important;
+}
+
+.color-light {
+    color: var(--color-light) !important;
+}
+
+.color-secondary {
+    color: var(--color-secondary) !important;
+}
+
+.color-grey {
+    color: var(--color-grey) !important;
+}
+
+.color-light {
+    color: var(--color-light) !important;
+}
+
+.color-grey-secondary {
+    color: var(--color-grey-secondary) !important;
+}
+
+.color-grey-dark {
+    color: var(--color-grey-dark) !important;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.color-white {
+    color: #FFFFFF !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}

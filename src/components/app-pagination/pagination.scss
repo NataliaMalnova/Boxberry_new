@@ -1,0 +1,15 @@
+.pagination {
+  &-item {
+    border-radius: 50%;
+    border: 1px solid var(--color-grizzly);
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    @include font-basic();
+    color: var(--color-primary-text);
+
+    &.active {
+      border: 1px solid var(--color-pink);
+    }
+  }
+}

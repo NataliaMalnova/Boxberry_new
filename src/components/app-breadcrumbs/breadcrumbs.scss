@@ -1,0 +1,16 @@
+.breadcrumbs {
+  a {
+    color: var(--color-grey-dark);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .breadcrumbs-separator {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--color-grey-light);
+  }
+}

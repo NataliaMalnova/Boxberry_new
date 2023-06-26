@@ -1,0 +1,73 @@
+{{> _structure/head
+    title="Каталог интернет-магазинов"
+    keywords="Каталог интернет-магазинов"
+    description="Каталог интернет-магазинов"
+}}
+
+{{> _header/header}}
+
+<main>
+    {{> app-breadcrumbs/breadcrumbs
+        title= 'Каталог интернет-магазинов'
+    }}
+    <div class="container">
+        <h1>Каталог интернет-магазинов</h1>
+        <div class="row mt-5 mt-sm-6 pt-1 pt-sm-0">
+            <div class="col-6 col-sm-4 col-md-3 ge-1 ge-sm-0">
+                {{> app-card/card-catalog title="Ecco" images="ecco.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 gs-1 gs-sm-0">
+                {{> app-card/card-catalog title="Reserved" images="reserved.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mt-2 mt-sm-0 ge-1 ge-sm-0">
+                {{> app-card/card-catalog title="Cropp" images="cropp.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mt-2 mt-sm-4 mt-md-0 gs-1 gs-sm-0">
+                {{> app-card/card-catalog title="Ecco" images="ecco.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mt-2 mt-sm-4 ge-1 ge-sm-0">
+                {{> app-card/card-catalog title="Cropp" images="cropp.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mt-2 mt-sm-4 gs-1 gs-sm-0">
+                {{> app-card/card-catalog title="Ecco" images="ecco.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mt-2 mt-sm-4 ge-1 ge-sm-0">
+                {{> app-card/card-catalog title="Reserved" images="reserved.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mt-2 mt-sm-4 gs-1 gs-sm-0">
+                {{> app-card/card-catalog title="Cropp" images="cropp.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mt-2 mt-sm-4 ge-1 ge-sm-0">
+                {{> app-card/card-catalog title="Ecco" images="ecco.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mt-2 mt-sm-4 gs-1 gs-sm-0">
+                {{> app-card/card-catalog title="Reserved" images="reserved.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mt-2 mt-sm-4 ge-1 ge-sm-0">
+                {{> app-card/card-catalog title="Cropp" images="cropp.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mt-2 mt-sm-4 gs-1 gs-sm-0">
+                {{> app-card/card-catalog title="Ecco" images="ecco.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mt-2 mt-sm-4 d-none d-sm-flex ge-1 ge-sm-0">
+                {{> app-card/card-catalog title="Cropp" images="cropp.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mt-2 mt-sm-4 d-none d-sm-flex gs-1 gs-sm-0">
+                {{> app-card/card-catalog title="Ecco" images="ecco.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mt-2 mt-sm-4 d-none d-sm-flex ge-1 ge-sm-0">
+                {{> app-card/card-catalog title="Reserved" images="reserved.svg"}}
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 mt-2 mt-sm-4 d-none d-sm-flex gs-1 gs-sm-0">
+                {{> app-card/card-catalog title="Cropp" images="cropp.svg"}}
+            </div>
+        </div>
+        <div class="mt-5 mt-sm-6 d-md-none">
+            {{> app-pagination/pagination }}
+        </div>
+    </div>
+</main>
+
+{{> _footer/footer}}
+
+{{> _structure/script }}

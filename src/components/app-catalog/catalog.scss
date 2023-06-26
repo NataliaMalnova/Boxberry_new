@@ -1,0 +1,53 @@
+.catalog-menu {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: calc(100% + 24px);
+    left: 0;
+    width: 260px;
+    max-height: 0;
+    overflow: hidden;
+    -moz-transition: max-height 0.5s ease;
+    -webkit-transition: max-height 0.5s ease;
+    -o-transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease;
+    z-index: 4;
+
+    @include media-breakpoint-up(sm) {
+        left: -24px;
+    }
+
+    &--wrap {
+        padding: 5px;
+    }
+
+    &__item {
+        margin-top: 2px;
+        cursor: pointer;
+        border-radius: 5px;
+
+        &:hover {
+            background: var(--color-light);
+        }
+    }
+
+    &__item.active {
+        background: var(--color-light); 
+    }
+}
+
+.catalog {
+    .btn-primary {
+        @include media-breakpoint-down(md) {
+            padding: 10px 12px;
+            min-width: max-content;
+            min-height: max-content;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 0;
+            width: 34px;
+            height: 34px;
+        }
+    }
+}

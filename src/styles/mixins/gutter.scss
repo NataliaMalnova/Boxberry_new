@@ -1,0 +1,72 @@
+@each $value, $media in $grid-breakpoints {
+  @each $gutter, $val in $gutters {
+    @if $media == 0  {
+      .g-#{$gutter} {
+        padding-right: $val;
+        padding-left: $val;
+      }
+    }
+    @else {
+      @media screen and (min-width: $media) {
+        .g-#{$value}-#{$gutter} {
+          padding-right: $val;
+          padding-left: $val;
+        }
+      }
+    } 
+  }
+}
+
+@each $value, $media in $grid-breakpoints {
+  @each $gutter, $val in $gutters {
+    @if $media == 0  {
+      .gm-#{$gutter} {
+        margin-right: -$val;
+        margin-left: -$val;
+      }
+    }
+    @else {
+      @media screen and (min-width: $media) {
+        .gm-#{$value}-#{$gutter} {
+          margin-right: -$val;
+          margin-left: -$val;
+        }
+      }
+    } 
+  }
+}
+
+@each $value, $media in $grid-breakpoints {
+  @each $gutter, $val in $gutters {
+    @if $media == 0  {
+      .ge-#{$gutter} {
+        padding-right: $val;
+      }
+    }
+    @else {
+      @media screen and (min-width: $media) {
+        .ge-#{$value}-#{$gutter} {
+          padding-right: $val;
+        }
+      }
+    } 
+  }
+}
+
+@each $value, $media in $grid-breakpoints {
+  @each $gutter, $val in $gutters {
+    @if $media == 0  {
+      .gs-#{$gutter} {
+        padding-left: $val;
+      }
+    }
+    @else {
+      @media screen and (min-width: $media) {
+        .gs-#{$value}-#{$gutter} {
+          padding-left: $val;
+        }
+      }
+    } 
+  }
+}
+

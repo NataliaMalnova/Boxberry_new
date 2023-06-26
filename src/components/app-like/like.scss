@@ -1,0 +1,11 @@
+.like {
+  cursor: pointer;
+}
+
+.like-count {
+  border-radius: 50%;
+  background: var(--color-pink);
+  min-width: 17px;
+  height: 17px;
+  margin-left: -5px;
+}
