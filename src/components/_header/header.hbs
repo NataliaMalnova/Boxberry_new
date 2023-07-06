@@ -1,14 +1,22 @@
 <header class="pt-3 w-100">
+    <div class="header-fixed"></div>
     <div class="container">
         <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center h-100">
             <div class="header-top d-flex flex-sm-row-reverse align-items-center">
-                <div class="ms-lg-4 ms-md-6 ms-sm-4">
+                <div>
                     {{> app-catalog/catalog}}
                 </div>
-                <a href="/" class="header-logo d-block me-lg-6">
+                <div class="d-none d-sm-flex align-items-center cursor-pointer ms-lg-6 ms-md-4 ms-3 ps-lg-3 me-lg-6 me-md-4 me-3 pe-lg-3" data-show-modal="overlay-city">
+                    {{> _images/location}}
+                    <p class="ms-1">Москва</p>
+                </div>
+                <a href="/" class="header-logo d-block">
                     <img src="./assets/img/logo.png" alt="logo" class="image-contain d-block">
                 </a>
-                <div class="d-sm-none">
+                <div class="d-flex d-sm-none">
+                    <div class="header-location svg-block me-3 cursor-pointer" data-show-modal="overlay-city">
+                        {{> _images/location}}
+                    </div>
                     {{> app-like/like}}
                 </div>
             </div>
@@ -23,3 +31,5 @@
 
     </div>
 </header>
+{{> app-overlay/overlay-favorites}}
+{{> app-overlay/overlay-city}}

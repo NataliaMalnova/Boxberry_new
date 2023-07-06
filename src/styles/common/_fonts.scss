@@ -77,6 +77,11 @@ label, p, li, input, a {
     color: var(--color-grey) !important;
 }
 
+.color-pink-dark {
+    color: var(--color-pink-dark) !important;
+}
+
+
 .color-light {
     color: var(--color-light) !important;
 }
@@ -91,6 +96,12 @@ label, p, li, input, a {
 
 .text-underline {
     text-decoration: underline;
+}
+
+.text-underline--hover {
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .color-white {

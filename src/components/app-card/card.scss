@@ -26,3 +26,19 @@
     }
   }
 }
+
+.favorite-card {
+  border-bottom: 1px solid var(--color-grey);
+
+  &:last-child {
+    border-bottom: none;
+  }
+  &__image {
+    width: 70px;
+    height: 50px;
+    @include media-breakpoint-up(sm) {
+      width: 150px;
+      height: 100px;
+    }
+  }
+}

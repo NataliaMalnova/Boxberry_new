@@ -1,21 +1,9 @@
-.header-input {
+.input-search {
   background: var(--color-light);
   border-radius: 100px;
   width: 100%;
 
-  @include media-breakpoint-up(sm) {
-    width: 350px;
-  }
-
-  @include media-breakpoint-up(md) {
-    width: 400px;
-  }
-
-  @include media-breakpoint-up(lg) {
-    width: 528px;
-  }
-
-  &__search {
+  &__svg {
     position: absolute;
     left: 13px;
     width: 16px;
@@ -37,28 +25,19 @@
   }
 }
 
-.input-datalist__list {
-  border-radius: 10px;
-  background: #FFFFFF;
-  box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.15);
-  list-style-type: none;
-  cursor: pointer;
-  z-index: 2;
-  position: absolute;
-  width: calc(100% - 1px);
-  top: calc(100% + 27px);
+.header-input {
+  width: 100%;
 
-  li {
-    font-weight: $font-weight;
-    border-bottom: 1px solid var(--color-light-secondary);
-    border-radius: 5px;
+  @include media-breakpoint-up(sm) {
+    width: 260px;
+  }
 
-    &:last-child {
-      border-bottom: none;
-    }
+  @include media-breakpoint-up(md) {
+    width: 400px;
+  }
 
-    &:hover {
-      background: var(--color-light);
-    }
+  @include media-breakpoint-up(lg) {
+    width: 528px;
   }
 }
+

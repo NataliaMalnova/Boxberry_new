@@ -1,64 +1,215 @@
-<div class="catalog-menu js--catalog-menu">
-    <div class="catalog-menu--wrap">
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3">
-            {{> _images/men}}
-            <p class="ms-3">Для мужчин</p>
-        </a>
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3">
-            {{> _images/women}}
-            <p class="ms-3">Для женщин</p>
-        </a>
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3">
-            {{> _images/children}}
-            <p class="ms-3">Одежда для детей</p>
-        </a>
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3 active">
-            {{> _images/appliances}}
-            <p class="ms-3">Бытовая техника</p>
-        </a>
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3">
-            {{> _images/computer}}
-            <p class="ms-3">Компьютерная техника</p>
-        </a>
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3">
-            {{> _images/electronics}}
-            <p class="ms-3">Электроника</p>
-        </a>
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3">
-            {{> _images/home}}
-            <p class="ms-3">Товары для дома</p>
-        </a>
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3">
-            {{> _images/kid}}
-            <p class="ms-3">Детские товары</p>
-        </a>
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3">
-            {{> _images/auto}}
-            <p class="ms-3">Автотовары</p>
-        </a>
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3">
-            {{> _images/pet}}
-            <p class="ms-3">Зоотовары</p>
-        </a>
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3">
-            {{> _images/repair}}
-            <p class="ms-3">Строительство и ремонт</p>
-        </a>
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3">
-            {{> _images/beauty}}
-            <p class="ms-3">Красота и здоровье</p>
-        </a>
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3">
-            {{> _images/sports}}
-            <p class="ms-3">Спорт и отдых</p>
-        </a>
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3">
-            {{> _images/books}}
-            <p class="ms-3">Книги</p>
-        </a>
-        <a href="" class="catalog-menu__item d-flex align-items-center pt-2 pb-2 ps-3 pe-3">
-            {{> _images/products}}
-            <p class="ms-3">Продукты</p>
-        </a>
+<div class="catalog-menu js--catalog-menu d-flex">
+    <div class="catalog-menu--wrap w-md-100">
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                    title="Для мужчин"
+                    image="./assets/img/menu/man.svg"
+                    active=true
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                        title="Для женщин"
+                        image="./assets/img/menu/women.svg"
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                        title="Одежда для детей"
+                        image="./assets/img/menu/children.svg"
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                        title="Бытовая техника"
+                        image="./assets/img/menu/appliances.svg"
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                        title="Компьютерная техника"
+                        image="./assets/img/menu/computer.svg"
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                        title="Электроника"
+                        image="./assets/img/menu/electronics.svg"
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                        title="Товары для дома"
+                        image="./assets/img/menu/home.svg"
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                        title="Детские товары"
+                        image="./assets/img/menu/kid.svg"
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                        title="Автотовары"
+                        image="./assets/img/menu/auto.svg"
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                        title="Зоотовары"
+                        image="./assets/img/menu/pet.svg"
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                        title="Строительство и ремонт"
+                        image="./assets/img/menu/repair.svg"
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                        title="Красота и здоровье"
+                        image="./assets/img/menu/beauty.svg"
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                        title="Спорт и отдых"
+                        image="./assets/img/menu/sports.svg"
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                        title="Книги"
+                        image="./assets/img/menu/books.svg"
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+        <div class="catalog-menu__mobile js--openMobileMenu">
+            <div class="js--openMobileMenu-item">
+                {{> app-catalog/catalog-item
+                        title="Продукты"
+                        image="./assets/img/menu/products.svg"
+                }}
+            </div>
+            <div class="catalog-menu__mobile-content js--openMobileMenu-content d-md-none">
+                {{> app-catalog/catalog-modile}}
+            </div>
+        </div>
+
+    </div>
+    <div class="d-none d-md-flex">
+        <div class="d-flex js--catalog-menu-detail">
+            {{> app-catalog/catalog-menu-detail}}
+        </div>
+        <div class="d-none js--catalog-menu-detail">
+            {{> app-catalog/catalog-menu-detail2}}
+        </div>
+        <div class="d-none js--catalog-menu-detail">
+            {{> app-catalog/catalog-menu-detail}}
+        </div>
+        <div class="d-none js--catalog-menu-detail">
+            {{> app-catalog/catalog-menu-detail2}}
+        </div>
+        <div class="d-none js--catalog-menu-detail">
+            {{> app-catalog/catalog-menu-detail}}
+        </div>
+        <div class="d-none js--catalog-menu-detail">
+            {{> app-catalog/catalog-menu-detail2}}
+        </div>
+        <div class="d-none js--catalog-menu-detail">
+            {{> app-catalog/catalog-menu-detail}}
+        </div>
+        <div class="d-none js--catalog-menu-detail">
+            {{> app-catalog/catalog-menu-detail2}}
+        </div>
+        <div class="d-none js--catalog-menu-detail">
+            {{> app-catalog/catalog-menu-detail}}
+        </div>
+        <div class="d-none js--catalog-menu-detail">
+            {{> app-catalog/catalog-menu-detail2}}
+        </div>
+        <div class="d-none js--catalog-menu-detail">
+            {{> app-catalog/catalog-menu-detail}}
+        </div>
+        <div class="d-none js--catalog-menu-detail">
+            {{> app-catalog/catalog-menu-detail2}}
+        </div>
+        <div class="d-none js--catalog-menu-detail">
+            {{> app-catalog/catalog-menu-detail}}
+        </div>
+        <div class="d-none js--catalog-menu-detail">
+            {{> app-catalog/catalog-menu-detail2}}
+        </div>
     </div>
 </div>

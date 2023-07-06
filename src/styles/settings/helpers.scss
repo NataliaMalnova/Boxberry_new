@@ -6,6 +6,12 @@
   width: 100%;
 }
 
+.w-md-100 {
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
