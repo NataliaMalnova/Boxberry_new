@@ -1,8 +1,8 @@
 @import "search";
 .header-logo {
-  width: 123px;
+  //width: 123px;
   @include media-breakpoint-up(md) {
-    width: 147px;
+    width: 172px;
   }
 }
 

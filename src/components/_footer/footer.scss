@@ -51,13 +51,16 @@
     &__qr {
       border-radius: 10px;
       background: #FFF;
-      padding: 13px 16px;
+      padding: 6px 5px 5px 22px;
       max-width: 280px;
+      height: max-content;
 
       img {
         transition: .4s;
         cursor: pointer;
         margin: 10px;
+        width: 64px;
+        height: auto;
 
         &:hover {
           transform: scale(1.05);
