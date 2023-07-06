@@ -30,6 +30,19 @@
   @include media-breakpoint-up(md) {
     max-height: 500px;
   }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--color-light);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-green-dark);
+    border-radius: 20px;
+  }
 }
 
 .search-result-item {

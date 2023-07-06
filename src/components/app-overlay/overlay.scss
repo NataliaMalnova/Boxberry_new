@@ -35,8 +35,22 @@
     .overlay-wrap__content {
       max-height: calc(90vh - 30px);
       overflow: auto;
+      padding-right: 16px;
       @include media-breakpoint-up(md) {
         max-height: calc(90vh - 200px);
+      }
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: var(--color-light);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--color-green-dark);
+        border-radius: 20px;
       }
     }
   }
