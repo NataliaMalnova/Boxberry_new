@@ -1,0 +1,24 @@
+.reviews-comment {
+  &_avatar {
+    width: 55px;
+    height: 55px;
+  }
+  &__content {
+    margin-left: 86px;
+    margin-top: 28px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--color-grey);
+
+    @media only screen and (max-width: 575px) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}
+
+.btn-reviews {
+  margin-left: 86px;
+  @media only screen and (max-width: 575px) {
+    margin-left: 0;
+  }
+}

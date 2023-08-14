@@ -1,0 +1,87 @@
+{{> _structure/head
+    title="Каталог интернет-магазинов"
+    keywords="Каталог интернет-магазинов"
+    description="Каталог интернет-магазинов"
+}}
+
+{{> _header/header}}
+
+<main>
+    {{> app-breadcrumbs/breadcrumbs
+        title= 'Электроника'
+    }}
+    <div class="container">
+        <h1>Каталог интернет-магазинов</h1>
+        <div class="d-flex flex-column flex-mb-row mt-4">
+            <div class="btn btn-grey d-flex align-items-center me-3">
+                {{> app-stars/stars }}
+                <a href="" class="color-grey-dark ms-1">22 отзыва</a>
+            </div>
+            <a href="" class="btn btn-grey color-grey-dark ms-1 mt-2 mt-mb-0">Характеристики</a>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mt-3 mt-sm-5 pt-sm-4 app-preview">
+            {{> app-sliders/slider-preview }}
+            <div class="d-flex flex-column flex-mb-row justify-content-between">
+                <div class="d-flex flex-column flex-shrink list-preview">
+                    {{> app-list/list-preview }}
+                    <a href="" class="btn btn-grey color-grey-dark mt-4 d-block">Все характеристики</a>
+                </div>
+                <div class="ms-lg-6 ps-mb-4 mt-5 mt-mb-0">
+                    {{> app-card/card-preview }}
+                </div>
+            </div>
+        </div>
+        <h2 class="mt-5 mt-sm-6 pt-sm-2 mb-5">Все предложения</h2>
+        {{> app-table/table-offers }}
+        <h2 class="mt-5 mt-sm-6 pt-sm-2 mb-5">О товаре</h2>
+        <p class="text-primary">Sony KD50X81J — телевизор с экраном, созданным на основе матрицы Triluminos Pro. Его
+            диагональ — 50 дюймов, разрешение — 3840 х 2160 пикселей. Фирменный процессор X1
+            обеспечивает масштабирование изображения до 4K Ultra HD.</p>
+        <p class="text-primary mt-3">В модели реализованы технологии HDR10, HLG и Motionflow XR 240. Мощность фронтальных
+            динамиков — 20 Вт. Операционная система — Android. Для дистанционного управления
+            используется Bluetooth-пульт.</p>
+        <a href="" class="btn btn-transparent btn-text-primary mt-4">Читать полностью
+            <span class="ms-2">{{> _images/arr_button }}</span>
+        </a>
+        <h2 class="mt-5 mt-sm-6 pt-sm-2 mb-5">Характеристики</h2>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                {{> app-list/list-characteristic }}
+            </div>
+            <div class="col-12 col-md-6 mt-3 mt-md-0">
+                {{> app-list/list-characteristic2 }}
+            </div>
+        </div>
+        <h2 class="mt-5 mt-sm-6 pt-sm-2 mb-5">Отзывы<span class="sub-title ms-1">3</span></h2>
+        {{> app-photo/photo-reviews }}
+        {{> app-reviews/reviews }}
+        {{> app-reviews/reviews2 }}
+        {{> app-reviews/reviews2 }}
+        <a class="btn btn-transparent-pink btn-reviews mt-5" href="">Читать все отзывы </a>
+        <h2 class="mt-5 mt-sm-6 pt-sm-2 mb-5">Оставить отзыв о товаре</h2>
+        {{> app-stars/assessment }}
+        {{> app-form/form }}
+        <div class="row mt-6 pt-6">
+            <div class="col-12 col-md-6 mt-6">
+                {{> app-sliders/slider-similar_products }}
+            </div>
+            <div class="col-12 col-md-6 mt-6">
+                {{> app-sliders/slider-buy_products }}
+            </div>
+            <div class="col-12 mt-6 pt-6">
+                {{> app-sliders/slider-top_products }}
+            </div>
+            <div class="col-12 mt-6 pt-6">
+                {{> app-sliders/slider-products }}
+            </div>
+            <div class="col-12 mt-6 pt-6">
+                {{> app-sliders/slider-brand }}
+            </div>
+        </div>
+    </div>
+</main>
+
+
+{{> _footer/footer}}
+
+{{> _structure/script }}

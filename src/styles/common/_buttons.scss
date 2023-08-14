@@ -43,6 +43,27 @@
     }
 }
 
+.btn-gradient-green {
+    background: linear-gradient(180deg, #fe5d89 0%, #ed1651 100%);
+    box-shadow: 0 0 50px rgba(237, 22, 81, 0.3);
+    border-radius: 50px;
+    min-height: 50px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+    padding: 20px 30px;
+    transition: all 0.6s ease;
+
+    @include media-breakpoint-down(sm) {
+        padding: 10px 20px;
+    }
+
+    &:hover {
+        background: linear-gradient(180deg, #c7e137 0%, #b1cd1a 100%);
+        box-shadow: 0px 0px 30px rgba(177, 205, 26, 0.25);
+    }
+}
+
 .btn-green {
     background-color : var(--color-green);
     color: #fff;    
@@ -80,4 +101,93 @@
             fill: #ed1651;
         }
     }
+}
+
+.btn-grey {
+    background: var(--color-grey2);
+    padding: 8px 14px;
+    border: 1px solid var(--color-grey2);
+    transition: .4s;
+    text-decoration: underline;
+    min-height: max-content;
+    height: max-content;
+
+    &:hover {
+        background: #ffffff;
+        text-decoration: none;
+    }
+}
+.btn-transparent {
+    border: 1px solid var(--color-grey);
+    border-radius: 50px;
+    padding: 13px 26px;
+    display: block;
+    width: max-content;
+
+    &:hover {
+        text-decoration: underline;
+        color: #363845;
+    }
+}
+
+.review-box {
+    .btn-review {
+        border: 1px solid var(--color-grey);
+        height: 40px;
+        width: 63px;
+        min-height: auto;
+        min-width: auto;
+
+        &:hover {
+            .btn-review-icon {
+                transform: scale(1.1);
+            }
+        }
+        &-icon {
+            transition: 0.4s;
+        }
+        &:nth-child(1) {
+            border-radius: 50px 0 0 50px;
+            border-right: none;
+            &:hover {
+                svg path {
+                    fill: var(--color-green);
+                }
+            }
+        }
+        &:nth-child(2) {
+            border-radius: 0 50px 50px 0;
+
+            &:hover {
+                svg path {
+                    fill: var(--color-pink);
+                }
+            }
+        }
+    }
+}
+
+.btn-transparent-pink {
+    border: 2px solid var(--color-pink);
+    padding: 14px 40px;
+    color: var(--color-pink);
+    display: block;
+    width: max-content;
+    cursor: pointer;
+    transition: 0s;
+
+    &:hover {
+        background: linear-gradient(180deg, #fe5d89 0%, var(--color-pink) 100%);
+        color: #fff;
+    }
+}
+
+.btn-auto {
+    margin: 0 auto;
+}
+.btn-text-primary {
+    @include font-primary();
+}
+.btn-text-large {
+    @include font-big();
 }

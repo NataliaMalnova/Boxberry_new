@@ -1,0 +1,25 @@
+.reviews-photo {
+  &_add,
+  &_item {
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+    transition: 0.2s;
+    padding: 16px;
+  }
+
+  &_add {
+    border: 1px dashed var(--color-grey);
+    &:hover {
+      background: var(--color-grey2);
+      border: 1px solid var(--color-grey2);
+    }
+  }
+
+  &_item {
+    border: 1px solid var(--color-grey);
+    &:hover {
+      border: 1px solid var(--color-green);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.ul-basic {
+  list-style: none;
+
+  li::before {
+    content: "•";
+    font-size: 25px;
+    line-height: 60%;
+    color: #ed1651;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.ul-grey {
+  list-style: none;
+  .ul-grey_li {
+    padding-left: 20px;
+
+  }
+  li::before,
+  .ul-grey_li::before {
+    content: "\2022";
+    font-size: 25px;
+    line-height: 60%;
+    color: #d5d8e7;
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+  }
+}

@@ -2,7 +2,6 @@ $font-primary: 'Open Sans', sans-serif;
 
 $font-weight: 400;
 $font-weight-bold: bold;
-
 $font-style: normal;
 
 $spacers: (
@@ -17,6 +16,7 @@ $spacers: (
 
 $grid-breakpoints: (
         xs: 0,
+        mb: 575px,
         sm: 768px,
         md: 991px,
         lg: 1280px
@@ -28,7 +28,7 @@ $container-max-widths: (
         lg: 1214px
 );
 
-$grid-column: (3, 4, 6);
+$grid-column: (3, 4, 6, 12);
 
 $grid-gutter-width: 20px;
 

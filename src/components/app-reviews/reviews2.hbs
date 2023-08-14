@@ -1,0 +1,31 @@
+<div class="reviews-comments mt-5">
+    <div class="reviews-comment">
+        <div class="d-flex flex-column flex-mb-row align-items-start w-100">
+            <div class="reviews-comment_avatar me-4">
+                {{> _images/avatar }}
+            </div>
+            <div class="d-flex justify-content-between w-100 mt-3 mt-mb-0">
+                <div>
+                    <p class="text-primary">Alexander86</p>
+                    {{> app-stars/stars }}
+                </div>
+                <div class="d-flex align-items-center">
+                    <p class="color-grey-dark me-3 me-md-6 d-none d-mb-flex">Месяц назад</p>
+                    <div class="review-box d-flex">
+                        <button class="btn btn-review flex-center position-relative text-small color-grey-dark svg-block">
+                            <div class="btn-review-icon me-1">{{> _images/ok }}</div>1
+                        </button>
+                        <button class="btn btn-review flex-center position-relative text-small color-grey-dark svg-block">
+                            <div class="btn-review-icon me-1">{{> _images/dis }}</div> 5
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews-comment__content">
+            <p class="text font-bold">Достоинства:<span class="ms-1 color-grey-dark">Качество, функции</span></p>
+            <p class="text font-bold mt-2">Недостатки:<span class="ms-1 color-grey-dark">Цена</span></p>
+            <p class="text font-bold mt-2">Комментарий:<span class="ms-1 color-grey-dark">Отличный телевизор</span></p>
+        </div>
+    </div>
+</div>

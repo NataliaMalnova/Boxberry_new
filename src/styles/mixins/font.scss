@@ -28,6 +28,15 @@
   }
 }
 
+@mixin font-big() {
+  font-size: 16px;
+  line-height: 150%;
+  @include media-breakpoint-up(sm) {
+    font-size: 18px;
+  }
+}
+
+
 @mixin font-large() {
   font-size: 16px;
   line-height: 150%;

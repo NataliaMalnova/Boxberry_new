@@ -1,3 +1,5 @@
+@import '../node_modules/swiper/swiper.scss';
+
 @import "_header/header.scss";
 @import "_footer/footer.scss";
 
@@ -9,8 +11,11 @@
 @import "./app-pagination/pagination.scss";
 @import "./app-overlay/overlay.scss";
 @import "./app-datalist/datalist.scss";
-
-
-
-
-
+@import "./app-stars/star.scss";
+@import "./app-sliders/slider.scss";
+@import "./app-list/list.scss";
+@import "./app-tooltip/tooltip.scss";
+@import "./app-table/table.scss";
+@import "./app-photo/photo.scss";
+@import "./app-reviews/reviews.scss";
+@import "./app-form/form.scss";

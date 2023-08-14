@@ -6,8 +6,17 @@
   width: 100%;
 }
 
+.w-50 {
+  width: 50%;
+}
+
 .w-md-100 {
   @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+.w-mb-100 {
+  @include media-breakpoint-down(mb) {
     width: 100%;
   }
 }

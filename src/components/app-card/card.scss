@@ -42,3 +42,73 @@
     }
   }
 }
+
+.card-preview {
+  border: 1px solid var(--color-grizzly);
+  border-radius: 10px;
+  padding: 20px;
+
+  @include media-breakpoint-up(sm) {
+    padding: 40px 27px;
+  }
+
+  @include media-breakpoint-only(xs) {
+    width: 100%;
+  }
+
+  button {
+    @include media-breakpoint-up(md) {
+      padding: 19px 26px;
+    }
+  }
+}
+
+.card-product {
+  @include media-breakpoint-up(mb) {
+    max-width: 238px;
+  }
+
+  &__image {
+    height: 190px;
+  }
+
+  &__actions {
+    .btn {
+      box-shadow: none;
+
+      svg {
+        rect, path {
+          fill: var(--color-grey);
+        }
+      }
+
+      &:hover {
+        svg {
+          rect, path {
+            fill: var(--color-pink);
+          }
+        }
+      }
+    }
+  }
+  .btn-gradient {
+    padding: 16px 25px;
+    @include media-breakpoint-up(md) {
+      padding: 16px 35px;
+    }
+  }
+}
+
+.card-brand {
+  min-height: 93px;
+  border: 1px solid var(--color-grey2);
+  border-radius: 10px;
+  padding: 24px 28px;
+
+  @media only screen and (max-width: 991px) {
+    padding: 12px;
+  }
+  a:hover {
+    color: var(--color-primary-text);
+  }
+}

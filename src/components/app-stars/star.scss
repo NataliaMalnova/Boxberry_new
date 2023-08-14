@@ -1,0 +1,45 @@
+.star-dark {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  top: 0;
+  left: 0;
+}
+
+.assessment {
+  &-stars {
+    direction: rtl;
+  }
+  &-star {
+    background: transparent;
+    width: 21px;
+    height: 21px;
+
+    &-icon {
+      width: 100%;
+      height: 100%;
+    }
+
+    path {
+      fill: #e5eacb;
+      stroke: #e5eacb;
+    }
+
+    &:hover ~ .assessment-star,
+    &:hover,
+    &.active ~ .assessment-star,
+    &.active {
+      path {
+        fill: #b4d01a;
+        stroke: #b4d01a;
+      }
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.hidden {
+  display: none !important;
+}
