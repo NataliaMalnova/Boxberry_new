@@ -1,0 +1,30 @@
+<div class="popular-sliders w-100">
+    <div class="slider-basic__top d-flex align-items-center justify-content-between position-relative mb-3">
+        <h3 class="me-mb-3 d-flex flex-shrink">Популярные товары</h3>
+        <div class="slider-basic__line w-100 d-none d-md-flex">&nbsp;</div>
+        <div class="slider-basic__nav d-flex align-items-center position-relative ms-3">
+            <div class="swiper-button-prev flex-center position-relative cursor-pointer">{{> _images/arr_slider }}</div>
+            <div class="swiper-button-next flex-center position-relative cursor-pointer">{{> _images/arr_slider }}</div>
+        </div>
+    </div>
+
+    <div class="popular-slider overflow-hidden me-lg-4 d-flex">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                {{> app-card/card-popular }}
+            </div>
+            <div class="swiper-slide">
+                {{> app-card/card-popular }}
+            </div>
+            <div class="swiper-slide">
+                {{> app-card/card-popular }}
+            </div>
+            <div class="swiper-slide">
+                {{> app-card/card-popular }}
+            </div>
+            <div class="swiper-slide">
+                {{> app-card/card-popular }}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+.cloe-fixed {
+  position: fixed;
+  z-index: 991;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+  box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+  padding: 12px 0;
+  transform: translateY(-120%);
+  opacity: 0;
+  -webkit-transition: opacity .3s ease,-webkit-transform .3s ease;
+  transition: opacity .3s ease,-webkit-transform .3s ease;
+  transition: opacity .3s ease,transform .3s ease;
+  transition: opacity .3s ease,transform .3s ease,-webkit-transform .3s ease;
+
+  @include media-breakpoint-down(md) {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(120%);
+  }
+
+  &.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

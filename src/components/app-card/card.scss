@@ -112,3 +112,13 @@
     color: var(--color-primary-text);
   }
 }
+
+.card-popular {
+  border: 1px solid var(--color-grizzly);
+  border-radius: 10px;
+  padding: 12px;
+
+  &__image {
+    height: 120px;
+  }
+}

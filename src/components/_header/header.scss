@@ -8,7 +8,7 @@
 
 .header-top,
 .header-bottom{
-  @include media-breakpoint-only(xs) {
+  @include media-breakpoint-down(sm) {
     width: 100%;
     justify-content: space-between;
   }

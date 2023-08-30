@@ -1,10 +1,12 @@
-import Swiper, { Navigation, Thumbs } from 'swiper';
+import Swiper, { Navigation, Thumbs, Grid } from 'swiper';
 import * as header from '../components/_header/header.js'
 import changeBurger from '../components/burger/burger.js'
 import * as catalog from "../components/app-catalog/catalog.js";
 import showModal from "../components/app-overlay/overlay.js";
 import changeStars from "../components/app-stars/star.js";
 import * as form from '../components/app-form/form.js'
+import scrolling from './components/scroll.js'
+import changeFixedTop from '../components/app-fixed/fixed.js'
 
 window.addEventListener('load', () => {
     header.changeDatalist();
@@ -15,6 +17,8 @@ window.addEventListener('load', () => {
     showModal();
     changeStars();
     form.upload();
+    scrolling();
+    changeFixedTop();
 
     let galleryThumbs = new Swiper(".preview-swiper-small", {
         direction: "vertical",
@@ -153,10 +157,37 @@ window.addEventListener('load', () => {
             }
         }
     });
-    new Swiper(".brand-sliders .brand-slider", {
-        slidesPerView: 2,
+
+    new Swiper(".popular-sliders .popular-slider", {
+        slidesPerView: 1,
         modules: [Navigation],
         spaceBetween: 8,
+        navigation: {
+            nextEl: '.popular-sliders .swiper-button-next',
+            prevEl: '.popular-sliders .swiper-button-prev',
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            992: {
+                slidesPerView: 4,
+            }
+        }
+    });
+
+
+    let brand_sliders = new Swiper(".brand-sliders .brand-slider", {
+
+        modules: [Navigation, Grid],
+        spaceBetween: 8,
+        slidesPerView: 2,
+        grid: {
+            rows: 2,
+        },
         navigation: {
             nextEl: '.brand-sliders .swiper-button-next',
             prevEl: '.brand-sliders .swiper-button-prev',
@@ -173,4 +204,26 @@ window.addEventListener('load', () => {
             }
         }
     });
+
+    const brandSliderUpdate = () => {
+        const slier = document.querySelector('.brand-slider');
+        if(!slier) return;
+
+        const elements = slier.querySelectorAll('.swiper-slide');
+        if(!elements) return;
+
+        let maxHeight = 0;
+
+        elements.forEach(el => {
+            if(maxHeight < el.clientHeight) maxHeight = el.clientHeight;
+        });
+
+        elements.forEach(el => {
+            el.style.height = maxHeight + 'px';
+        });
+
+        slier.style.height = maxHeight * 2 + 30 + 'px';
+        brand_sliders.update();
+    }
+    brandSliderUpdate();
 });
