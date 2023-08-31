@@ -15,16 +15,16 @@
         <div class="d-flex flex-column flex-mb-row mt-4">
             <div class="btn btn-grey d-flex align-items-center me-3">
                 {{> app-stars/stars }}
-                <a href="#_reviews" class="color-grey-dark ms-1">22 отзыва</a>
+                <a href="#_reviews" class="color-grey-dark ms-1" data-scroll-margin="80">22 отзыва</a>
             </div>
-            <a href="#_characteristic" class="btn btn-grey color-grey-dark ms-1 mt-2 mt-mb-0">Характеристики</a>
+            <a href="#_characteristic" class="btn btn-grey color-grey-dark ms-1 mt-2 mt-mb-0" data-scroll-margin="80">Характеристики</a>
         </div>
         <div class="d-flex flex-column flex-md-row justify-content-between mt-3 mt-sm-5 pt-sm-4 app-preview">
             {{> app-sliders/slider-preview }}
             <div class="d-flex flex-column flex-mb-row justify-content-between">
                 <div class="d-flex flex-column flex-shrink list-preview">
                     {{> app-list/list-preview }}
-                    <a href="#_characteristic" class="btn btn-grey color-grey-dark mt-4 d-block">Все характеристики</a>
+                    <a href="#_characteristic" class="btn btn-grey color-grey-dark mt-4 d-block" data-scroll-margin="80">Все характеристики</a>
                 </div>
                 <div class="ms-lg-6 ps-mb-4 mt-5 mt-mb-0">
                     {{> app-card/card-preview }}
@@ -43,7 +43,7 @@
         <a href="" class="btn btn-transparent btn-text-primary mt-4">Читать полностью
             <span class="ms-2">{{> _images/arr_button }}</span>
         </a>
-        <h2 class="mt-5 mt-sm-6 pt-sm-2 mb-5" id="_characteristic">Характеристики</h2>
+        <h2 class="mt-5 mt-sm-6 pt-sm-2 mb-5" id="_characteristic" data-scroll-margin="80">Характеристики</h2>
         <div class="row">
             <div class="col-12 col-md-6">
                 {{> app-list/list-characteristic }}

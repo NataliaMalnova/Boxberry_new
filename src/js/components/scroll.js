@@ -13,10 +13,13 @@ const scrolling = () => {
         let speed = 0.2;
         if(link.hasAttribute('data-scroll-time')) speed = link.getAttribute('data-scroll-time');
 
+        let margin = 30;
+        if(link.hasAttribute('data-scroll-margin')) margin = link.getAttribute('data-scroll-margin');
+
         link.addEventListener('click', function (event) {
             event.preventDefault();
 
-            let widthTop = document.documentElement.scrollTop - 30;
+            let widthTop = document.documentElement.scrollTop - margin;
             let hash = this.hash;
             let toBlock = document.querySelector(hash).getBoundingClientRect().top;
             let start = null;

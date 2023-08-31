@@ -485,7 +485,6 @@ var upload = function upload() {
     }
     upload.classList.remove('d-flex');
     upload.classList.add('d-none');
-    console.log('123');
     var clear = document.querySelectorAll('.js--ipload-clear');
     if (clear.length != 0) {
       clear.forEach(function (elem) {
@@ -649,9 +648,11 @@ var scrolling = function scrolling() {
   links.forEach(function (link) {
     var speed = 0.2;
     if (link.hasAttribute('data-scroll-time')) speed = link.getAttribute('data-scroll-time');
+    var margin = 30;
+    if (link.hasAttribute('data-scroll-margin')) margin = link.getAttribute('data-scroll-margin');
     link.addEventListener('click', function (event) {
       event.preventDefault();
-      var widthTop = document.documentElement.scrollTop - 30;
+      var widthTop = document.documentElement.scrollTop - margin;
       var hash = this.hash;
       var toBlock = document.querySelector(hash).getBoundingClientRect().top;
       var start = null;

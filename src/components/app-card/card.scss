@@ -119,6 +119,14 @@
   padding: 12px;
 
   &__image {
-    height: 120px;
+    height: 125px;
   }
+  &__images {
+     span {
+       height: 24px;
+       width: 24px;
+       border-radius: 50%;
+       border: 1px solid var(--color-pink);
+     }
+   }
 }

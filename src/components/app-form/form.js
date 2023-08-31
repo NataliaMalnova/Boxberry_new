@@ -59,7 +59,7 @@ const upload = () => {
         }
         upload.classList.remove('d-flex');
         upload.classList.add('d-none');
-        console.log('123')
+
         const clear = document.querySelectorAll('.js--ipload-clear');
 
         if(clear.length != 0) {
