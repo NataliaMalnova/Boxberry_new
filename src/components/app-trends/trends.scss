@@ -1,0 +1,34 @@
+.app-trend {
+  outline: 1px solid #DADADA;
+  border-radius: 50px;
+  padding: 8px 12px;
+  margin-right: 6px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  @include media-breakpoint-up(md) {
+    padding: 14px 24px;
+    margin-right: 12px;
+  }
+  &:hover {
+    outline: 1px solid #363845;
+  }
+}
+.app-trends__link {
+  margin-right: 6px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  color: #7C808E;
+  text-decoration: underline;
+  @include media-breakpoint-up(md) {
+    padding: 14px 24px;
+  }
+}
+
+.app-trends-sg {
+  .app-trend {
+    border-radius: 10px;
+    @include media-breakpoint-up(md) {
+      margin-right: 16px;
+    }
+  }
+}

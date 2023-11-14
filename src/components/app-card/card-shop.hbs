@@ -1,0 +1,17 @@
+<div class="card-shop w-100 d-flex flex-column justify-content-between h-100">
+    <div class="">
+        {{#if card_tip}}
+            <div class="card-shop__tip text-small">{{card_tip}}</div>
+        {{/if}}
+        <a href class="card-shop__image w-100 flex-center">
+            <img src="{{card_img}}" alt="product" class="image-contain" />
+        </a>
+        <a href="" class="text-primary mt-4 d-block">{{card_title}}</a>
+    </div>
+    <div class="">
+        {{#if card_price_old}}
+            <a href="" class="card-shop__price--old text-small d-block mt-1">{{card_price_old}} ₽</a>
+        {{/if}}
+        <a href="" class="card-shop__price text-large font-bold d-block">{{card_price}}<span class="text color-grey-dark ms-1">₽</span></a>
+    </div>
+</div>

@@ -23,3 +23,126 @@
     }
   }
 }
+.header-main {
+  .catalog .btn {
+    @include media-breakpoint-down(sm) {
+      background: none;
+    }
+  }
+  .burger-menu .burger__line {
+    @include media-breakpoint-down(sm) {
+      background: #363845;
+    }
+  }
+
+}
+.header-banner {
+  padding: 50px 60px;
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  @include media-breakpoint-up(lg) {
+    width: calc(100% + 40px * 2);
+    margin-left: -40px;
+    padding: 73px 102px;
+    min-height: 335px;
+  }
+  @include media-breakpoint-down(mb) {
+    border-radius: 10px;
+    padding: 40px 16px;
+  }
+  .header-banner__images {
+    overflow: hidden;
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: -50px;
+      margin-top: 10px;
+    }
+    @include media-breakpoint-down(mb) {
+      width: 100%;
+      margin-bottom: -40px;
+      width: calc(100% + 32px);
+      margin-left: -16px;
+    }
+
+    img {
+      display: block;
+
+      @include media-breakpoint-up(md) {
+        width: 500px;
+      }
+
+      @include media-breakpoint-down(md) {
+        margin: 0 auto;
+      }
+      @include media-breakpoint-up(lg) {
+        width: auto;
+      }
+      @include media-breakpoint-down(mb) {
+
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+  }
+
+  h1 {
+    color: #fff;
+    @include font-h2();
+  }
+
+  p {
+    color: #fff;
+    max-width: 453px;
+    font-size: 15px;
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+  }
+
+  .header-input {
+    height: 50px;
+    @include media-breakpoint-up(sm) {
+      width: 374px;
+    }
+    @include media-breakpoint-down(mb) {
+      height: 44px;
+    }
+    input {
+      height: 100%;
+      padding: 15px 15px 15px 47px;
+      @include media-breakpoint-down(mb) {
+        padding: 13px 13px 13px 40px;
+      }
+      &::placeholder {
+        color: #939393;
+      }
+    }
+    .input-search__svg {
+      left: 16px;
+    }
+
+    .btn {
+      margin-left: 0px;
+      z-index: 2;
+      height: 42px;
+      font-weight: $font-weight-bold;
+      font-size: 12px;
+      margin-right: 4px;
+      @include media-breakpoint-down(mb) {
+        min-width: auto;
+        min-height: auto;
+        width: 34px;
+        height: 34px;
+        padding: 0;
+      }
+    }
+  }
+
+
+}

@@ -130,3 +130,53 @@
      }
    }
 }
+
+.card-shop {
+  position: relative;
+  height: 100%;
+  &__image {
+    height: 135px;
+    @include media-breakpoint-up(sm) {
+      height: 166px;
+    }
+  }
+  &__price--old {
+    color: #7C808E;
+    text-decoration: line-through;
+  }
+  &__tip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--color-green);
+    color: #fff;
+    padding: 1px 5px;
+    width: max-content;
+    border-radius: 5px;
+  }
+}
+
+.card-compare {
+  height: 100%;
+  border: 1px solid #DADADA;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 26px 14px;
+  @include media-breakpoint-up(md) {
+    padding: 40px 48px;
+  }
+  &__vs {
+    background: var(--color-pink);
+    border-radius: 5px;
+    color: #fff;
+    width: 26px;
+    height: 19px;
+  }
+
+  &__image {
+    height: 125px;
+  }
+  &__images {
+
+  }
+}

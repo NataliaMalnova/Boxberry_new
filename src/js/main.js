@@ -5,8 +5,10 @@ import * as catalog from "../components/app-catalog/catalog.js";
 import showModal from "../components/app-overlay/overlay.js";
 import changeStars from "../components/app-stars/star.js";
 import * as form from '../components/app-form/form.js'
+import { sliderBasicInit, sliderCompareInit } from '../components/app-sliders/slider.js'
 import scrolling from './components/scroll.js'
 import changeFixedTop from '../components/app-fixed/fixed.js'
+import {showAccordion} from "../components/app-category/category.js";
 
 window.addEventListener('load', () => {
     header.changeDatalist();
@@ -19,6 +21,9 @@ window.addEventListener('load', () => {
     form.upload();
     scrolling();
     changeFixedTop();
+    sliderBasicInit();
+    sliderCompareInit();
+    showAccordion();
 
     let galleryThumbs = new Swiper(".preview-swiper-small", {
         direction: "vertical",

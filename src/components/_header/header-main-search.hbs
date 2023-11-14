@@ -1,0 +1,33 @@
+<div class="header-banner mt-5" style="background: url('./assets/img/header-banner-bg.png') no-repeat center / cover">
+    <div class="d-flex flex-column align-items-center align-items-md-start">
+        <h1>Найди нужный товар</h1>
+        <p class="mt-1">На Boxberry Market собраны предложения на 60 млн товаров из более чем 300+ магазинов</p>
+        <div class="mt-4 mt-md-5 pt-md-2">
+            <div class="header-input input-search input-datalist d-flex align-items-center position-relative w-100">
+                <div class="input-search__svg svg-block">
+                    {{> _images/search}}
+                </div>
+                <div class="position-relative js--input-datalist w-100">
+                    <input type="text" placeholder="Поиск" id="custom-select-input" class="select-css w-100">
+                    {{> _header/search-list}}
+                </div>
+                <button class="btn btn-primary flex-center flex-shrink">
+                    <span class="svg-block d-mb-none">
+                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 6.85718L1 6.85718" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.85714 1.71432L13 6.85718" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.85714 12L13 6.85714" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="d-none d-mb-flex">Найти</span>
+                    </button>
+            </div>
+        </div>
+    </div>
+    <div class="header-banner__images">
+        <picture class="w-100">
+            <source media="(max-width: 575px)" srcset="./assets/img/header-banner-mob.png">
+            <img src="./assets/img/header-banner.png" srcset="" alt="top" class="banner">
+        </picture>
+    </div>
+</div>

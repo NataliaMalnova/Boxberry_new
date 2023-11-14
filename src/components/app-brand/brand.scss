@@ -1,0 +1,31 @@
+.app-brand {
+  height: 80px;
+}
+
+.app-brands-row {
+  @include media-breakpoint-down(md) {
+    flex-wrap: wrap;
+  }
+}
+
+.app-brand {
+  width: calc(100% / 6);
+  @include media-breakpoint-down(md) {
+    width: calc(100% / 3);
+    justify-content: center;
+  }
+  @include media-breakpoint-down(mb) {
+    width: 50%;
+  }
+  img {
+    max-width: calc(100% - 12px);
+    @include media-breakpoint-down(mb) {
+      max-width: calc(100% - 40px);
+    }
+  }
+}
+
+.app-brands__link {
+  color: #7C808E;
+  text-decoration: underline;
+}

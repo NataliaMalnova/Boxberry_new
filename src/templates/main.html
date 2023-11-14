@@ -1,0 +1,120 @@
+{{> _structure/head
+    title="Главная"
+    keywords="Главная"
+    description="Главная"
+}}
+
+{{> _header/header-main}}
+<div class="container">
+    {{> _header/header-main-search}}
+</div>
+<main>
+    <div class="container">
+        <div class="mt-6">
+            {{> app-sliders/slider-basic swiper_id="swiper_slider_1" slider_title="Новые товары для мужчин"}}
+        </div>
+        <div class="mt-6 pt-md-6">
+            {{> app-sliders/slider-basic swiper_id="swiper_slider_2" slider_title="Новые товары для женщин" slider_women=true}}
+        </div>
+        <div class="mt-6 pt-md-6">
+            {{> app-sliders/slider-compare swiper_id="swiper_slider_3" slider_title="Популярные сравнения"}}
+        </div>
+        <div class="mt-6 pt-md-6">
+            {{> app-sliders/slider-basic swiper_id="swiper_slider_4" slider_title="Новые товары для мужчин"}}
+        </div>
+        <div class="mt-6 pt-md-6">
+            {{> app-sliders/slider-basic swiper_id="swiper_slider_5" slider_title="Новые товары для женщин" slider_women=true}}
+        </div>
+        <div class="mt-6 pt-md-6">
+            <h2>Тренды этой недели</h2>
+            <div class="mt-5">
+                {{> app-trends/trends }}
+            </div>
+        </div>
+        <div class="mt-6 pt-md-6">
+            {{> app-sliders/slider-basic swiper_id="swiper_slider_4" slider_title="Новые товары для мужчин"}}
+        </div>
+        <div class="mt-6 pt-md-6">
+            {{> app-sliders/slider-basic swiper_id="swiper_slider_5" slider_title="Новые товары для женщин" slider_women=true}}
+        </div>
+        <div class="mt-6 pt-md-6">
+            <h2>Популярные бренды</h2>
+            <div class="mt-5">
+                {{> app-brand/brands }}
+            </div>
+        </div>
+        <div class="mt-6 pt-md-6">
+            <h2>Популярные категории</h2>
+            <div class="mt-5">
+                {{> app-trends/trends2 }}
+            </div>
+        </div>
+        <div class="mt-6 pt-md-6">
+            <h2>Все категории</h2>
+            <div class="mt-5">
+                {{> app-category/category }}
+            </div>
+        </div>
+        <div class="mt-6 pt-md-6">
+            <h2>Популярные теги</h2>
+            <div class="pt-md-2 d-flex flex-wrap">
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Мужская одежда</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Джинсы</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Футболки и поло</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Поло</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Мужская одежда</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Джинсы</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Футболки и поло</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Поло</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Мужская одежда</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Джинсы</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Футболки и поло</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Поло</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Мужская одежда</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Джинсы</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Футболки и поло</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="text-primary color-grey-dark">Поло</a>
+                </div>
+                <div class="mt-2 mt-md-3 me-2 me-md-3">
+                    <a href="" class="link-grey">Показать все</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+{{> _footer/footer}}
+
+{{> _structure/script }}

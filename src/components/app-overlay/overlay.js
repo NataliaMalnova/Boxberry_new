@@ -13,9 +13,10 @@ const showModal = () => {
         let card_content = ''
 
         elem.addEventListener('click', function(e) {
-
+            const margin = window.innerWidth - document.body.clientWidth;
             e.preventDefault()
             document.documentElement.style.overflowY = 'hidden';
+            document.documentElement.style.paddingRight = margin + 'px';
 
             overlay.style.zIndex = 999
             elem.disabled = true
@@ -38,11 +39,13 @@ const showModal = () => {
         })
 
         const clickClose = () => {
+            if(!overlay.querySelector('.overlay-wrap')) return
             if (getComputedStyle(overlay.querySelector('.overlay-wrap')).marginRight != '0px') return
             overlay.classList.remove('overlay-show')
             setTimeout(() => {
                 overlay.style.zIndex = -1
                 document.documentElement.style.overflowY = 'auto'
+                document.documentElement.style.paddingRight = '0';
             }, 300)
         }
     })
