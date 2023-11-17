@@ -204,12 +204,17 @@
     z-index: 2;
     transform: rotate(-90deg);
     margin-top: -20px;
-
+    @include media-breakpoint-down(md) {
+      left: -10px;
+    }
   }
   .swiper-button-next {
     left: auto;
     right: -20px;
-    transform: rotate(90deg)
+    transform: rotate(90deg);
+    @include media-breakpoint-down(md) {
+      right: -10px;
+    }
   }
 }
 
