@@ -1,0 +1,27 @@
+{{> _structure/head
+    title="Бренды"
+    keywords="Бренды"
+    description="Бренды"
+}}
+
+{{> _header/header}}
+
+<main>
+    {{> app-breadcrumbs/breadcrumbs
+        title= 'Бренды'
+    }}
+    <div class="container page-brand">
+        <h1>Бренды</h1>
+
+        <h2>Популярные бренды</h2>
+        {{> app-brand/brands2 }}
+        {{> app-brand/brand-slider-letter }}
+        {{> app-brand/brand-accordion }}
+
+    </div>
+</main>
+
+
+{{> _footer/footer}}
+
+{{> _structure/script }}

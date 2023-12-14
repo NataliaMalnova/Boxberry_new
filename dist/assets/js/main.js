@@ -410,6 +410,7 @@ var showAccordion = function showAccordion() {
     wrap.forEach(function (elem) {
       var buttons = elem.querySelectorAll(".js--accordion-button");
       var content = elem.querySelector(".js--accordion-content");
+      var ob = content.querySelector('div');
       if (buttons.length === 0 || !content) return;
       buttons.forEach(function (btn, index) {
         btn.addEventListener("click", function () {
@@ -422,6 +423,11 @@ var showAccordion = function showAccordion() {
           }
         });
       });
+      var ro = new ResizeObserver(function (entries) {
+        if (!content.classList.contains('active')) return;
+        content.style.setProperty('max-height', content.scrollHeight + 'px');
+      });
+      if (ob) ro.observe(ob);
     });
   });
 };
@@ -11220,6 +11226,9 @@ window.addEventListener('load', function () {
   (0,_components_app_sliders_slider_js__WEBPACK_IMPORTED_MODULE_7__.sliderBasicInit)();
   (0,_components_app_sliders_slider_js__WEBPACK_IMPORTED_MODULE_7__.sliderCompareInit)();
   (0,_components_app_category_category_js__WEBPACK_IMPORTED_MODULE_10__.showAccordion)();
+  new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".brand-letter-sliders .swiper", {
+    slidesPerView: 'auto'
+  });
   var galleryThumbs = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".preview-swiper-small", {
     direction: "vertical",
     slidesPerView: 4,

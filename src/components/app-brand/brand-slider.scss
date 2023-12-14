@@ -1,0 +1,43 @@
+.brand-letter-sliders {
+  margin-top: 70px;
+  position: relative;
+  @include media-breakpoint-down(md) {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-top: 40px;
+  }
+  .swiper {
+    @include media-breakpoint-down(md) {
+      padding-left: 20px;
+    }
+  }
+  .swiper-slide {
+    width: calc(100% / 28);
+    @include media-breakpoint-down(md) {
+      width: 50px;
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    @include media-breakpoint-down(md) {
+      font-size: 15px;
+    }
+  }
+
+  .letter-hidden {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 26.53%, #FFFFFF 79.59%);
+    width: 40px;
+    height: 20px;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include media-breakpoint-up(md) {
+     display: none;
+    }
+  }
+}

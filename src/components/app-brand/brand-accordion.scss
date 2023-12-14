@@ -1,0 +1,62 @@
+.app-accordion__brand {
+  margin-top: 44px;
+  .app-accordion__row {
+    border: 1px solid #DADADA;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .app-accordion__row + .app-accordion__row {
+    margin-top: 15px;
+  }
+
+  .app-accordion__title {
+    padding: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    @include media-breakpoint-up(md) {
+      padding: 20px 27px;
+    }
+  }
+  .app-accordion__arrow {
+    width: 7px;
+    svg {
+      path {
+        fill: #363845;
+      }
+    }
+  }
+
+  .app-accordion__content-wrap {
+    padding: 0 11px 30px 16px;
+    @include media-breakpoint-up(md) {
+      padding: 0 20px 37px 27px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #7C808E;
+      margin-bottom: 9px;
+      margin-right: 8px;
+      @include media-breakpoint-up(mb) {
+        font-size: 15px;
+      }
+
+      &:after {
+        content: '';
+        width: 4px;
+        height: 4px;
+        background: #C5C9D4;
+        border-radius: 50%;
+        display: block;
+        margin-left: 8px;
+      }
+    }
+
+    a {
+      margin-bottom: 9px;
+    }
+  }
+}

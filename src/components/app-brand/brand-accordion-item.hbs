@@ -1,0 +1,15 @@
+<div class="app-accordion__row js--accordion-wrap {{#if open}}open{{/if}}" id="{{id}}">
+    <div class="app-accordion__title d-flex justify-content-between align-items-center js--accordion-button w-100">
+        <p class="text-big d-flex align-items-center">
+            {{title}}
+        </p>
+        <div class="svg-block cursor-pointer w-max app-accordion__arrow">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.00004 4.66714L1.33333 0.000488281L0 1.33382L6.00004 7.33389L12 1.33382L10.6667 0.000488281L6.00004 4.66714Z" fill="#363845"/>
+            </svg>
+        </div>
+    </div>
+    <div class="app-accordion__content js--accordion-content">
+        {{> app-category/category-content2 }}
+    </div>
+</div>

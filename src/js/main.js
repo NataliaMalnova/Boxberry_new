@@ -25,6 +25,10 @@ window.addEventListener('load', () => {
     sliderCompareInit();
     showAccordion();
 
+    new Swiper(".brand-letter-sliders .swiper", {
+        slidesPerView: 'auto'
+    });
+
     let galleryThumbs = new Swiper(".preview-swiper-small", {
         direction: "vertical",
         slidesPerView: 4,
