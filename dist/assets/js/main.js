@@ -713,6 +713,68 @@ var changeBurger = function changeBurger() {
 
 /***/ }),
 
+/***/ "./src/components/show-more/show.js":
+/*!******************************************!*\
+  !*** ./src/components/show-more/show.js ***!
+  \******************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "showMore": function() { return /* binding */ showMore; }
+/* harmony export */ });
+var showMore = function showMore() {
+  var wrapper = document.querySelectorAll('.js--show-more');
+  if (wrapper.length === 0) return;
+  wrapper.forEach(function (wrap) {
+    var btn = wrap.querySelector('.js--show-more--btn');
+    var content = wrap.querySelector('.js--show-more--content');
+    var row = 3;
+    if (wrap.hasAttribute('data-show-content-row')) row = wrap.getAttribute('data-show-content-row');
+    var heightStart = content.querySelector('a').scrollHeight * row;
+    var ob = content.querySelector('div');
+    if (!btn || !content) return;
+    content.style.setProperty('max-height', heightStart + 'px');
+    if (heightStart >= content.scrollHeight) {
+      btn.classList.add('d-none');
+    } else {
+      btn.classList.remove('d-none');
+    }
+    btn.addEventListener('click', function () {
+      var textShow = '';
+      var textHidden = '';
+      if (btn.hasAttribute('data-more-show')) textShow = btn.getAttribute('data-more-show');
+      if (btn.hasAttribute('data-more-hidden')) textHidden = btn.getAttribute('data-more-hidden');
+      if (wrap.classList.contains('active')) {
+        content.style.setProperty('max-height', heightStart + 'px');
+        if (textShow) btn.innerHTML = textShow;
+        setTimeout(function () {
+          wrap.classList.remove('active');
+        }, 0);
+      } else {
+        content.style.setProperty('max-height', content.scrollHeight + 'px');
+        if (textHidden) btn.innerHTML = textHidden;
+        setTimeout(function () {
+          wrap.classList.add('active');
+        }, 0);
+      }
+    });
+    var ro = new ResizeObserver(function (entries) {
+      if (heightStart >= content.scrollHeight) {
+        btn.classList.add('d-none');
+      } else {
+        btn.classList.remove('d-none');
+      }
+      if (!wrap.classList.contains('active')) return;
+      content.style.setProperty('max-height', content.scrollHeight + 'px');
+    });
+    if (ob) ro.observe(ob);
+  });
+};
+
+
+/***/ }),
+
 /***/ "./src/js/_clickOutside.js":
 /*!*********************************!*\
   !*** ./src/js/_clickOutside.js ***!
@@ -11201,6 +11263,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_scroll_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/scroll.js */ "./src/js/components/scroll.js");
 /* harmony import */ var _components_app_fixed_fixed_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/app-fixed/fixed.js */ "./src/components/app-fixed/fixed.js");
 /* harmony import */ var _components_app_category_category_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/app-category/category.js */ "./src/components/app-category/category.js");
+/* harmony import */ var _components_show_more_show_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/show-more/show.js */ "./src/components/show-more/show.js");
+
 
 
 
@@ -11226,6 +11290,7 @@ window.addEventListener('load', function () {
   (0,_components_app_sliders_slider_js__WEBPACK_IMPORTED_MODULE_7__.sliderBasicInit)();
   (0,_components_app_sliders_slider_js__WEBPACK_IMPORTED_MODULE_7__.sliderCompareInit)();
   (0,_components_app_category_category_js__WEBPACK_IMPORTED_MODULE_10__.showAccordion)();
+  (0,_components_show_more_show_js__WEBPACK_IMPORTED_MODULE_11__.showMore)();
   new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".brand-letter-sliders .swiper", {
     slidesPerView: 'auto'
   });

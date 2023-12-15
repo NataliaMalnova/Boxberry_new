@@ -1,0 +1,20 @@
+.show-more {
+  .show-more--btn{
+    cursor: pointer;
+  }
+
+  .content-to-hide {
+    transition: max-height 0.4s ease;
+    overflow: hidden;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+}
+
+.show-more:not(.active) {
+  > div:nth-child(1).content-to-hide {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+}

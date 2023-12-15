@@ -1,16 +1,16 @@
-.app-accordion__brand {
+.brand-table {
   margin-top: 44px;
-  .app-accordion__row {
+  &__row {
     border: 1px solid #DADADA;
     overflow: hidden;
     border-radius: 10px;
   }
 
-  .app-accordion__row + .app-accordion__row {
+  &__row + &__row {
     margin-top: 15px;
   }
 
-  .app-accordion__title {
+  &__title {
     padding: 16px;
     cursor: pointer;
     text-transform: uppercase;
@@ -18,16 +18,8 @@
       padding: 20px 27px;
     }
   }
-  .app-accordion__arrow {
-    width: 7px;
-    svg {
-      path {
-        fill: #363845;
-      }
-    }
-  }
 
-  .app-accordion__content-wrap {
+    &__content {
     padding: 0 11px 30px 16px;
     @include media-breakpoint-up(md) {
       padding: 0 20px 37px 27px;
@@ -38,7 +30,7 @@
       align-items: center;
       font-size: 14px;
       color: #7C808E;
-      margin-bottom: 9px;
+      padding-bottom: 9px;
       margin-right: 8px;
       @include media-breakpoint-up(mb) {
         font-size: 15px;
@@ -54,9 +46,11 @@
         margin-left: 8px;
       }
     }
+  }
 
-    a {
-      margin-bottom: 9px;
-    }
+  .brand-table-more {
+    margin-left: auto;
+    margin-right: 24px;
+    width: max-content;
   }
 }

@@ -9,6 +9,7 @@ import { sliderBasicInit, sliderCompareInit } from '../components/app-sliders/sl
 import scrolling from './components/scroll.js'
 import changeFixedTop from '../components/app-fixed/fixed.js'
 import {showAccordion} from "../components/app-category/category.js";
+import {showMore} from "../components/show-more/show.js";
 
 window.addEventListener('load', () => {
     header.changeDatalist();
@@ -24,6 +25,7 @@ window.addEventListener('load', () => {
     sliderBasicInit();
     sliderCompareInit();
     showAccordion();
+    showMore();
 
     new Swiper(".brand-letter-sliders .swiper", {
         slidesPerView: 'auto'
